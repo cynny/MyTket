@@ -5,14 +5,15 @@ const Footer = () => {
   return (
     <footer>
         <Container>
-          <Row>
-            <Col className='text-center py-3'>
+           <Row>
+               <Col className = 'text-center py-3'>
               Copyright &copy; MyTket
-            </Col>
-          </Row>
-    </Container>
+               </Col>
+               </Row> 
+        </Container>
     </footer>
   )
 }
+  
 
 export default Footer
