@@ -1,0 +1,68 @@
+const products = [
+    {
+      _id: '1',
+      name: 'Seattle Night Market | Full Moon Rising',
+      image: '/Images/Img4.jpg',
+      Date: 'Sat, Mar 19',
+      Time: '2:00 PM',
+      Address: 'Magnuson Park • Seattle,WA',      
+    },
+    {
+        _id: '2',
+        name: 'Dinner and Music with The Ali Jackson Trio',
+        image: '/Images/Img11.jpg',
+        Date: 'Sun, Mar 20',
+        Time: '6:00 PM',
+        Address: '422 N E St • Tacoma, WA',        
+    },
+    {
+        _id: '3',
+        name: 'Lakewood SummerFest - Lakewood',
+        image: '/Images/Img3.jpg',
+        Date: 'Sat, Jul 23',
+        Time: '10:00 AM',
+        Address: 'Fort Park • Lakewood, WA',        
+    },
+    {
+        _id: '4',
+        name: 'Men Aren’t Funny (early show)',
+        image: '/Images/Img10.jpg',
+        Date: 'Sat, Mar 19',
+        Time: '7:00 PM',
+        Address: 'The Rendezvous • Seattle, WA',        
+    },
+    {
+        _id: '5',
+        name: 'Next Gen Conference',
+        image: '/Images/Img5.jpg',
+        Date: 'Fri, Mar 18',
+        Time: '5:00 PM',
+        Address: 'New Life Church • Renton, WA',        
+    },
+    {
+        _id: '6',
+        name: 'Bellevue Job Fair',
+        image: '/Images/Img6.jpg',
+        Date: 'Fri, Mar 25',
+        Time: '11:00 AM',
+        Address: 'Bellevue • Bellevue, WA',        
+    },
+    {
+        _id: '7',
+        name: 'RISE 2022',
+        image: '/Images/Img7.jpg',
+        Date: 'Thu, Mar 17',
+        Time: '6:45 AM',
+        Address: 'Eventide Union • Seattle, WA',        
+    },
+    {
+        _id: '8',
+        name: '2022 Futurecast Forum',
+        image: '/Images/Img9.jpg',
+        Date: 'Wed, Mar 30',
+        Time: '1:30 PM',
+        Address: 'Seattle Center • Seattle, WA',       
+    },
+  ]
+  
+  export default products
