@@ -10,7 +10,7 @@ const Event = ({ event }) => {
 
         <Card.Body>
         <a href={`/event/${event._id}`}>
-            <Card.Title as="div">
+            <Card.Title as="div" class="eventName">
                 <strong>{event.name}</strong>
             </Card.Title>        
         </a>
