@@ -6,7 +6,7 @@ import axios from 'axios'
 
 
 const HomeScreen = () => {
-  const [events, setEvents] = useState([])
+  const [events, setEvents] = useState([]);
 
   useEffect(()=>{
   const fetchEvents = async() => {

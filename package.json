@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "My events app",
   "main": "server.js",
+  "type": "module",
   "scripts": {
-    "start": "node backend/server"
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run  client\" "
   },
   "repository": {
     "type": "git",
@@ -17,6 +21,16 @@
   },
   "homepage": "https://github.com/cynny/MyTket#readme",
   "dependencies": {
-    "express": "^4.17.3"
+    "axios": "^0.26.1",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.9",
+    "react-router-bootstrap": "^0.26.1",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "^5.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.15"
   }
 }
