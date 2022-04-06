@@ -1,4 +1,4 @@
-const products = [
+const events = [
     {
       _id: '1',
       name: 'Seattle Night Market | Full Moon Rising',
@@ -81,5 +81,5 @@ const products = [
     },
   ]
 
- module.exports = products
+ export default events
  

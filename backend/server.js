@@ -1,7 +1,11 @@
-const express = require('express')
-const events = require('./data/events')
+import express from 'express'
+import dotenv from 'dotenv'
+import events from './data/events.js'
+import connectDB from './config/db.js'
 
 const app = express()
+dotenv.config()
+connectDB()
 
 app.get('/api/events', (req, res) => {
     res.json(events)
@@ -12,4 +16,5 @@ app.get('/api/events/:id', (req, res) => {
   res.json(event);
 })
 
-app.listen(4000, console.log('Server is running on port 4000'));
+const PORT = process.env.PORT || 4000
+app.listen(PORT, console.log(`Server is running on port ${PORT}`));
