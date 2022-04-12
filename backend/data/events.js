@@ -1,6 +1,5 @@
 const events = [
-    {
-      _id: '1',
+    {    
       name: 'Seattle Night Market | Full Moon Rising',
       image: '/Images/Img4.jpg',
       Date: 'Sat, Mar 19',
@@ -10,7 +9,6 @@ const events = [
       description: 'Seattle\'s largest 21+ only indoor Night Market returns for the ultimate night of eating, drinking & shopping local at Magnuson Hangar 30.'
     },
     {
-        _id: '2',
         name: 'Dinner and Music with The Ali Jackson Trio',
         image: '/Images/Img11.jpg',
         Date: 'Sun, Mar 20',
@@ -20,7 +18,6 @@ const events = [
         description: 'On Sunday March The Kareem Kandi World Orchestra presents The Ali Jackson Trio perform for a special evening of dinner and music at Tacoma\'s historic Vaeth Mansion. Proceeds will go towards supporting our music and education exchange with Biot France. Ticket price includes dinner, drinks, and the performance.'        
     },
     {
-        _id: '3',
         name: 'Lakewood SummerFest - Lakewood',
         image: '/Images/Img3.jpg',
         Date: 'Sat, Jul 23',
@@ -30,7 +27,6 @@ const events = [
         description: 'Enjoy Summerfest Saturday July 23; a memorable outdoor festival for the whole family, with FREE admission! Sample amazing food from over 30 food trucks while listening to live music on two stages. Enjoy extreme entertainment, stilt walkers, a classic car show, Kids Zone with inflatables and pony rides. Shop at over 100 unique market vendors. Delve into the diversity of our community at the International Festival stage featuring acts from 14 countries. Get your free "Passport" stamped at over 25 high quality multi-sporting activities, and hands-on Art stations. There is truly something for everyone. This magnificent 340 acre park features a lake, one the state\'s best dog parks, expansive biking trails, and playground. For a complete schedule of events please visit www.cityoflakewood.us. Direct communication to smartinez@cityoflakewood.us'       
     },
     {
-        _id: '4',
         name: 'Men Aren’t Funny (early show)',
         image: '/Images/Img10.jpg',
         Date: 'Sat, Mar 19',
@@ -40,7 +36,6 @@ const events = [
         description: 'Living under the patriarchy is hard, so come and celebrate our resilience and strength with some fierce and hilarious womxn and enbies.'       
     },
     {
-        _id: '5',
         name: 'Next Gen Conference',
         image: '/Images/Img5.jpg',
         Date: 'Fri, Mar 18',
@@ -50,7 +45,6 @@ const events = [
         description: 'On March 18th Youth & Young Adults are coming together for a night to motivate the mind, renew the soul & empower each life through Christ!'       
     },
     {
-        _id: '6',
         name: 'Bellevue Job Fair',
         image: '/Images/Img6.jpg',
         Date: 'Fri, Mar 25',
@@ -60,7 +54,6 @@ const events = [
         description: 'This event is FREE for all job seekers. DiversityX virtual job fairs connect you directly with diversity and inclusion-friendly employers. Interview with 40+ companies in just 3-hours.'       
     },
     {
-        _id: '7',
         name: 'RISE 2022',
         image: '/Images/Img7.jpg',
         Date: 'Thu, Mar 17',
@@ -70,7 +63,6 @@ const events = [
         description: 'We Rise is an annual young persons\' activist national gathering! From climate breakdown to corporate hegemony, from vaccine apartheid to systemic racism✊🏽this is an event for young people who want to learn about and get involved in the fight for global justice'       
     },
     {
-        _id: '8',
         name: '2022 Futurecast Forum',
         image: '/Images/Img9.jpg',
         Date: 'Wed, Mar 30',

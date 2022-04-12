@@ -13,7 +13,7 @@ const EventScreen = () => {
       setEvent(data)
     }
     fetchEvent()
-  })
+  },[params])
   
 
   return (
