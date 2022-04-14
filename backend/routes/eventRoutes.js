@@ -22,7 +22,7 @@ router.get('/:id', asyncHandler(async (req, res) => {
 
     if (event) {
         res.json(event)
-    } else {
+         } else {
             res.status(404).json({message: 'Event not found'})
         }
     }))
