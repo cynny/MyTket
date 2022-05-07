@@ -1,20 +1,22 @@
-import React, {useState, useEffect} from 'react'
+import React, {useDispatch, useSelector} from 'react-redux'
 import { Link, useParams } from 'react-router-dom'
 import { Row, Col, Image, ListGroup, Card, Button} from 'react-bootstrap'
 import axios from 'axios'
+import Rating from '../components/Rating'
+import Message from '../components/Message'
+import Loader from '../components/Loader'
+import { listEventDetails } from '../actions/eventActions'
 
 const EventScreen = () => {
   const params = useParams ();
-  const [event, setEvent] = useState({})
+  const dispatch = useDispatch()
+  const eventDetails = useSelector((state) => state.
+  eventDetails)
+  const { loading, error, event } = eventDetails
 
-  useEffect(() =>{
-    const fetchEvent = async() =>{
-      const {data} = await axios.get(`/api/events/${params.id}`)
-      setEvent(data)
-    }
-    fetchEvent()
-  },[params])
-  
+  useEffect(() => {
+   dispatch(listEventDetails(params.id))
+  }, [dispatch, params])
 
   return (
     <>
