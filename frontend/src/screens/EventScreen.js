@@ -1,6 +1,7 @@
-import React, {useDispatch, useSelector} from 'react-redux'
+import React, { useEffect, useState } from 'react'
+import {useDispatch, useSelector} from 'react-redux'
 import { Link, useParams } from 'react-router-dom'
-import { Row, Col, Image, ListGroup, Card, Button} from 'react-bootstrap'
+import { Row, Col, Image, ListGroup, Card, Button, Form} from 'react-bootstrap'
 import axios from 'axios'
 import Rating from '../components/Rating'
 import Message from '../components/Message'
@@ -8,6 +9,7 @@ import Loader from '../components/Loader'
 import { listEventDetails } from '../actions/eventActions'
 
 const EventScreen = () => {
+  const [qty, setQty] = useState(0);
   const params = useParams ();
   const dispatch = useDispatch()
   const eventDetails = useSelector((state) => state.
@@ -58,6 +60,22 @@ const EventScreen = () => {
                   </Col>
                 </Row>
               </ListGroup.Item>
+
+              {event.countInStock > 0 && (
+                <ListGroup.Item>
+                  <Row>
+                    <Col>Qty</Col>
+                    <Col>
+                    <Form.Control
+                    as='select'
+                    value={qty}
+                    >
+
+                      </Form.Control></Col>
+                  </Row>
+                </ListGroup.Item>
+              )}
+
               <ListGroup.Item>
                 <Button
                   className='btn-block'
