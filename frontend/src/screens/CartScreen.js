@@ -13,8 +13,7 @@ const CartScreen = () => {
     const navigate = useNavigate()
     const eventId = params.id
 
-  const qty = location.search ? Number(location.search.split('='))
-  [1] : 1
+  const qty = location.search ? Number(location.search.split('=')[1]) : 1
 
   useEffect(() => {
     if (eventId){
