@@ -8,6 +8,7 @@ import { addToCart, removeFromCart } from '../actions/cartActions'
 const CartScreen = () => {
 
     const location = useLocation()
+    const dispatch = useDispatch();
     const params = useParams();
     const navigate = useNavigate()
     const eventId = params.id
@@ -16,10 +17,10 @@ const CartScreen = () => {
   [1] : 1
 
   useEffect(() => {
-    if (productId){
-      dispatch(addToCart(productId, qty))
+    if (eventId){
+      dispatch(addToCart(eventId, qty))
     }
-  }, [dispatch, productId, qty])
+  }, [dispatch, eventId, qty])
 
   const cart = useSelector((state) => state.cart)
   const {cartItems} = cart
@@ -43,13 +44,13 @@ const CartScreen = () => {
     ) : (
       <ListGroup variant='flush'>
         {cartItems.map((item) => (
-          <ListGroup.Item key={item.product}>
+          <ListGroup.Item key={item.event}>
             <Row>
               <Col md={2}>
                 <Image src={item.image} alt={item.name} fluid rounded />
               </Col>
               <Col md={3}>
-                <Link to={`/product/${item.product}`}>{item.name}</Link>
+                <Link to={`/event/${item.event}`}>{item.name}</Link>
               </Col>
               <Col md={2}>${item.price}</Col>
               <Col md={2}>
@@ -58,7 +59,7 @@ const CartScreen = () => {
                   value={item.qty}
                   onChange={(e) =>
                     dispatch(
-                      addToCart(item.product, Number(e.target.value))
+                      addToCart(item.event, Number(e.target.value))
                     )
                   }
                 >
@@ -73,7 +74,7 @@ const CartScreen = () => {
                 <Button
                   type='button'
                   variant='light'
-                  onClick={() => removeFromCartHandler(item.product)}
+                  onClick={() => removeFromCartHandler(item.event)}
                 >
                   <i className='fas fa-trash'></i>
                 </Button>
